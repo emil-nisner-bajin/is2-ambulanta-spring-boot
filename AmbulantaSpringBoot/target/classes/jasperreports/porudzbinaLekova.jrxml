@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="porudzbinaLekova" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0618fbb0-ce3d-4a10-8f75-a341509bec72">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="datumSlanja" class="java.lang.String"/>
+	<parameter name="farmaceutIme" class="java.lang.String"/>
+	<parameter name="farmaceutPrezime" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cenaPoKomadu" class="java.lang.Double"/>
+	<field name="naziv" class="java.lang.String"/>
+	<field name="kolicina" class="java.lang.Integer"/>
+	<field name="proizvodjacLeka.naziv" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47" splitType="Stretch">
+			<staticText>
+				<reportElement x="150" y="0" width="257" height="40" uuid="d55af42b-298b-4373-8475-d6d3ae50f529"/>
+				<textElement textAlignment="Center">
+					<font size="22"/>
+				</textElement>
+				<text><![CDATA[Porudzbina Lekova]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="140" height="30" uuid="bee8c9fb-cf58-4986-8836-2b9ed9c2dc07"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Datum Slanja:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="51" width="100" height="30" uuid="604aeb3d-ad2e-41d6-973c-9db9044754e3"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Farmaceut:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="10" width="100" height="30" uuid="f2c3a5ad-0c35-4c49-ac11-98c055ab0e7f"/>
+				<textFieldExpression><![CDATA[$P{datumSlanja}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="50" width="100" height="31" uuid="8472c7c4-ec0e-41f0-bb5a-66d1b234d205"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$P{farmaceutIme}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="50" width="100" height="31" uuid="3e12bf58-80fe-401e-b11a-06d0db945f6a"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified"/>
+				<textFieldExpression><![CDATA[$P{farmaceutPrezime}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="30" y="12" width="100" height="30" backcolor="#6568AB" uuid="d737a492-b988-4f18-ad1e-11ce48f87a2e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="723cf805-302c-4cb9-b5fb-291e738a62db"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Lek]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="130" y="12" width="100" height="30" backcolor="#6568AB" uuid="7d345a61-830b-4914-ac3e-f6769f583b5d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8732256f-63d0-494d-aaba-303b726f0fa6"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Proizvodjac]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="230" y="12" width="100" height="30" backcolor="#6568AB" uuid="c72e2048-946f-45f8-8257-c9ee1b776313">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="83ec6414-8dc7-4220-8194-ee0a5743a2f1"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Kolicina]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="330" y="12" width="100" height="30" backcolor="#6568AB" uuid="c70eaa47-277d-4acd-aca0-f77c390124e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="86d0ba28-a8a6-43e2-a909-c587c49af8c7"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Cena (kom)]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="0" width="100" height="30" uuid="a5bba711-512f-4834-9f5b-c7e3e3c8ec27">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="723cf805-302c-4cb9-b5fb-291e738a62db"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{naziv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="0" width="100" height="30" uuid="27358349-fd28-4897-9532-b9945e017c0c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8732256f-63d0-494d-aaba-303b726f0fa6"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{proizvodjacLeka.naziv}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="0" width="100" height="30" uuid="00883590-0cc1-49ac-b91c-299c5bb02408">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="83ec6414-8dc7-4220-8194-ee0a5743a2f1"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{kolicina}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="100" height="30" uuid="87007a35-b991-413f-bebc-b2569ee4f56e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="86d0ba28-a8a6-43e2-a909-c587c49af8c7"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{cenaPoKomadu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="190" y="30" width="100" height="30" uuid="7a6997b9-6917-4d5f-bb90-b2aa8d4d8387"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="128" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="30" width="180" height="30" uuid="8cea6598-de8f-4920-89b8-4ea6a23a5763"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Ukupan Broj Stavki:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="0" width="150" height="30" uuid="c2eba196-f853-4948-b8f1-a9f8259b3dc7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Datum Pristizanja:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="170" y="30" width="100" height="30" uuid="30b4e50f-a338-43e6-aab0-08f7916cc2a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="80" width="160" height="30" uuid="d305c15b-7717-4450-9faf-e4fc5f3a6d01"/>
+				<textElement textAlignment="Center" verticalAlignment="Justified">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Potpis primaoca:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="80" width="100" height="30" uuid="65819adb-3b06-45c5-b226-f061d3d9863d"/>
+				<textElement verticalAlignment="Bottom"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

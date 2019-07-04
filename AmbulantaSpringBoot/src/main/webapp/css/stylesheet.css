@@ -1,0 +1,63 @@
+a{
+	text-decoration: none;
+	color:gray;
+}
+
+a:hover{
+	color:red;
+}
+
+a:active{
+	color:black;
+}
+
+body{
+	background-color: #f4f4f4;
+	color:#555555;
+
+	font-family: Serif;
+
+	font-size: 25px;
+	font-weight: normal; /*boldness of the text {bold, normal} */
+
+	line-height: 1.6em; /* space between line, em unit of line height moze biti i px */
+
+	margin: 0;
+}
+
+body{
+	width: 800px;
+	height: 500px;
+	border: 1px solid #000;
+	margin-top: 30px;
+	position: relative;
+	background-image: url("../images/background2.jpg");
+	background-size: 100%; /*Slika se 100% fituje u p-box*/
+	background-repeat: no-repeat; /*ako je slika mala onda se ponavalja, size 100% mora biti iskljucen da bi ovo radilo*/
+}
+
+form { /*ovako targetujem classu */
+	background-color: #333;
+	color:#fff;
+
+	border: 5px red solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	border-top-style: dotted; /* solid dotted dashed ...*/
+
+	border: 5px red solid;
+
+	padding-top:20px;
+
+	padding: 20px; 
+
+	margin: 20px;
+
+	min-width:300px; /*Ovaj property koristim jer zelim da mi page bude responsive, tj. da text ne ispada iz svog div elementa prilikom resize-a prozora browsera*/ 
+}
+
+div{
+	border:3px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
